@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f38c2f29c7.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'black-header': '#201a2e',
+                'blue-header' : '#dffffe',
+              },
+              spacing: {
+                '15': '3.75rem',
+              }
+            },
+            fontFamily: {
+                'berylium': ['berylium_bd', 'raleway'],
+                'krueger': ['ATCKrueger', 'raleway'],
+            },
+            fontSize: {
+                'size-header': '1.8rem',
+            },
+            dropShadow: {
+                'under-header': '0 0 16px rgba(0, 0, 0, 0.9)',
+            }
+          }
+        }
+      </script>
+    <link rel="stylesheet" href="style.css">
+    <title>Dead Cells</title>
+</head>
+<body>
+    <header class="flex justify-between items-center bg-black-header h-16 fixed w-full drop-shadow-under-header">
+        <a><img src="images/logoHorizontal.png" class="h-10 w-32 pl-5"></a>
+        <ul class="pr-5 flex justify-between font-berylium text-size-header w-[713px]">
+            <li>
+                <a class="text-blue-header">About</a>
+            </li>
+            <li>
+                <a class="text-blue-header">Leaderboard</a>
+            </li>
+            <li>
+                <a class="text-blue-header">Patch notes</a>
+            </li>
+            <li>
+                <a class="text-blue-header">Blog</a>
+            </li>
+            <li>
+                <a class="text-blue-header">Press</a>
+            </li>
+            <li>
+                <a class="text-blue-header">Wiki</a>
+            </li>
+            <li>
+                <a class="text-blue-header text-4xl">
+                    <i class="fa fa-facebook-official"></i>
+                </a>
+            </li>
+            <li>
+                <a class="text-blue-header text-4xl">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <section>
+        <h1 class="hidden">Dead Cells</h1>
+        <div>
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/02G3GUt6Nzo" title="Dead Cells Release Date Announcement 
+            Trailer - Available August 7, 2018" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+            picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <a>Where to buy ?</a>
+        <div>
+            <h2>What is Dead Cells ?</h2>
+            <p> Dead Cells is a rogue-lite, Castlevania-inspired action-platformer, allowing you to explore a sprawling, ever-changing 
+                castle… assuming you’re able to fight your way past its keepers. </p>
+            <p> To beat the game, you’ll have to master 2D "souls-lite combat" with the ever-present threat of permadeath looming. No 
+                checkpoints. Kill, die, learn, repeat. </p>
+
+            <div>
+                <p> RogueVania: Intense 2D action with the adrenaline pumping threat of permadeath in a castle full of cuddly creatures. </p>
+                <p> Souls-lite combat: Pattern-based bosses and minions, weapons and spells with unique gameplay. Roll roll roll your boat 
+                    gently down the stream... </p>
+                <p> Nonlinear progression: Unlock new levels with every death, take a new path. Tired of the stinking sewers? Why not take 
+                    the ramparts? </p>
+                <p> Exploration: Secret rooms, hidden passages, charming landscapes. A fine place for a holiday. </p>
+            </div>
+            <video></video>
+            <video></video>
+        </div>
+        <div>
+            <h2>Dead Cells on Android</h2>
+            <p>Get an alert when Dead Cells is available on Android :</p>
+            <input>
+            <input>
+        </div>
+        <div>
+            <h2>Blog</h2>
+            <div>
+                <div>
+                    <p>gamecrate.com</p>
+                    <a>Interview: Motion Twin talks about developing Dead Cells</a>
+                    <p>Motion Twin is a small, French game development company located in Bordeaux, France. From there, the 10-man team has 
+                        created a multitude of mobile games. But what happens when they shift over into making a game for PC/console? That 
+                        result is Dead Cells, a roguelike, Castlevania-inspired, action-platformer. The game combines all of the fun of 
+                        platformers, without the hassle of trick edges, with the fun of quick and visceral combat in a non-hardware 
+                        intensive package.</p>
+                </div>
+            </div>
+            <a>Read more posts</a>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <img>
+            <p><a>Motion Twin</a> is a French workers cooperative based in Bordeaux.</p>
+            <p>We've been making games since 2001 and we're going to keep on doing that until senility kicks in! Currently working on our 
+                first PC/Console title.</p>
+        </div>
+        <ul>
+            <li>
+                <a>Available on Steam</a>
+            </li>
+            <li>
+                <a>Follow us on Twitter</a>
+            </li>
+            <li>
+                <a>Follow us on Facebook</a>
+            </li>
+            <li>
+                <a>Presskit</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

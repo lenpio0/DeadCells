@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'ATCKrueger';
+    src: url("fonts/ATCKrueger-Bold.eot");
+    src: url("fonts/ATCKrueger-Bold.eot?#iefix") format("embedded-opentype"),url("fonts/ATCKrueger-Bold.woff") format("woff"),url("fonts/ATCKrueger-Bold.svg#svgFontName") format("svg")
+}
+
+@font-face {
+    font-family: 'berylium_bd';
+    src: url("fonts/berylium_bd-webfont.woff2") format("woff2"),url("fonts/berylium_bd-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal
+}
