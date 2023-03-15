@@ -12,7 +12,9 @@
             extend: {
               colors: {
                 'black-header': '#201a2e',
-                'blue-header' : '#dffffe',
+                'blue-header': '#dffffe',
+                'black-footer': '#101524', 
+                'grey-footer': '#888a92',
               },
               spacing: {
                 '15': '3.75rem',
@@ -35,7 +37,7 @@
     <title>Dead Cells</title>
 </head>
 <body>
-    <header class="flex justify-between items-center bg-black-header h-16 fixed w-full drop-shadow-under-header">
+    <header class="flex justify-between items-center bg-black-header opacity-90 h-16 fixed w-full drop-shadow-under-header">
         <a><img src="images/logoHorizontal.png" class="h-10 w-32 pl-5"></a>
         <ul class="pr-5 flex justify-between font-berylium text-size-header w-[713px]">
             <li>
@@ -116,25 +118,25 @@
             <a>Read more posts</a>
         </div>
     </section>
-    <footer>
-        <div>
-            <img>
-            <p><a>Motion Twin</a> is a French workers cooperative based in Bordeaux.</p>
-            <p>We've been making games since 2001 and we're going to keep on doing that until senility kicks in! Currently working on our 
-                first PC/Console title.</p>
+    <footer class="bg-black-footer">
+        <div class="flex flex-col flex-wrap">
+            <img src="images/mtlogo.png">
+            <p class="text-grey-footer"><a class="text-white">Motion Twin</a> is a French workers cooperative based in Bordeaux.</p>
+            <p class="text-grey-footer">We've been making games since 2001 and we're going to keep on doing that until senility kicks in! 
+                Currently working on our first PC/Console title.</p>
         </div>
         <ul>
             <li>
-                <a>Available on Steam</a>
+                <a class="text-grey-footer">Available on Steam</a>
             </li>
             <li>
-                <a>Follow us on Twitter</a>
+                <a class="text-grey-footer">Follow us on Twitter</a>
             </li>
             <li>
-                <a>Follow us on Facebook</a>
+                <a class="text-grey-footer">Follow us on Facebook</a>
             </li>
             <li>
-                <a>Presskit</a>
+                <a class="text-grey-footer">Presskit</a>
             </li>
         </ul>
     </footer>
