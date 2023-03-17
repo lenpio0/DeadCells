@@ -133,10 +133,47 @@
                 <p class="mt-3"> <strong class="text-red-content">Exploration:</strong> Secret rooms, hidden passages, charming landscapes. A fine place for a holiday. </p>
             </div>
             <div class="flex justify-between">
-                <video src='videos/roof.webm'autoplay loop class="w-85 shadow-video"></video>
-                <video src='videos/bossFight.webm' autoplay loop class="w-85 shadow-video"></video>
+                <video src='videos/roof.webm'autoplay loop class="w-85 shadow-video hover:cursor-zoom-in" id="roof-video"></video>
+                <video src='videos/bossFight.webm' autoplay loop class="w-85 shadow-video hover:cursor-zoom-in" id="boss-video"></video>
             </div>
         </div>
+        <script type="text/javascript">
+            var roofVideo = document.getElementById("roof-video")
+             if (roofVideo) {
+                roofVideo.addEventListener("click", function (evt) {
+                    if (roofVideo.requestFullscreen) {
+                        roofVideo.requestFullscreen();
+                    }
+                    else if (roofVideo.msRequestFullscreen) {
+                        roofVideo.msRequestFullscreen();
+                    }
+                    else if (roofVideo.mozRequestFullScreen) {
+                        roofVideo.mozRequestFullScreen();
+                    }
+                    else if (roofVideo.webkitRequestFullScreen) {
+                        roofVideo.webkitRequestFullScreen();
+                    }
+                }, false);
+            }
+            var bossVideo = document.getElementById("boss-video")
+             if (bossVideo) {
+                bossVideo.addEventListener("click", function (evt) {
+                    if (bossVideo.requestFullscreen) {
+                        bossVideo.requestFullscreen();
+                    }
+                    else if (bossVideo.msRequestFullscreen) {
+                        bossVideo.msRequestFullscreen();
+                    }
+                    else if (bossVideo.mozRequestFullScreen) {
+                        bossVideo.mozRequestFullScreen();
+                    }
+                    else if (bossVideo.webkitRequestFullScreen) {
+                        bossVideo.webkitRequestFullScreen();
+                    }
+                }, false);
+            }
+       </script>
+   
         <h2 class="text-center text-red-content font-berylium text-size-h2 before:bg-spacer-left-h2 before:w-1/5 before:h-1 before:inline-block before:align-middle after:bg-spacer-right-h2 after:w-1/5 after:h-1 after:inline-block after:align-middle mt-10 mb-5px">Dead Cells on Android</h2>
         <div class="flex flex-col items-center w-175 m-auto">
             <p class="w-124">Get an alert when Dead Cells is available on Android :</p>
