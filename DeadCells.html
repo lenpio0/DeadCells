@@ -8,61 +8,74 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                'black-header': '#101524e6',
-                'blue-header': '#dffffe',
-                'pink-header': '#B9508D',
-                'black-bg': '#101524', 
-                'grey-footer': '#888a92',
-                'red-content': '#A40239',
-                'yellow-content': '#F9CF87',
-                'purple-button': '#832154',
-                'transparent-mail': '#ffffff0d',
-                'yellow-mail': '#8b785b',
-                'red-button': '#a40239cc',
+            theme: {
+                extend: {
+                    colors: {
+                        'black-header': '#101524e6',
+                        'blue-header': '#dffffe',
+                        'pink-header': '#B9508D',
+                        'black-bg': '#101524', 
+                        'grey-footer': '#888a92',
+                        'red-content': '#A40239',
+                        'yellow-content': '#F9CF87',
+                        'purple-button': '#832154',
+                        'transparent-mail': '#ffffff0d',
+                        'yellow-mail': '#8b785b',
+                        'red-button': '#a40239cc',
+                        'blue-blog': '#0d111d',
+                        'red-blog': '#1d0f20',
+                        'red-blog-border': 'rgba(164,2,57,0.3)',
+                    },
+                    spacing: {
+                        '15': '3.75rem',
+                        '22': '5.5rem',
+                        '85': '21.25rem',
+                        '124': '31rem',
+                        '140': '35rem',
+                        '175': '43.75rem',
+                    },
+                    boxShadow: {
+                        'video': '0 0 16px rgba(0, 0, 0, 0.75)',
+                        'header': '0 0 16px rgba(0, 0, 0, 0.9)',
+                    },
+                    margin: {
+                        '5px': '5px',
+                    },
+                    fontFamily: {
+                        'berylium': ['berylium_bd', 'raleway'],
+                        'krueger': ['ATCKrueger', 'raleway'],
+                        'raleway': ['raleway'],
+                    },
+                    fontSize: {
+                        'source-blog': '0.9rem',
+                        'title-blog': '2rem',
+                        'size-content': '1.1rem',
+                        'size-header': '1.8rem',
+                        'size-button': '2.5rem',
+                        'size-buy': '3.75rem',
+                        'size-h2': '4rem',
+                        'size-placeholder': '0.8rem',
+                    },
+                    backgroundImage: {
+                        'shadow': 'linear-gradient(to bottom, #000000cc, #00000080 12px)',
+                        'header-banner': "url('images/headerBanner.jpg')",
+                        'where-buy': 'linear-gradient(to bottom, #d1394e 50%, #cd2f46 50%)',
+                        'where-buy-hover': 'linear-gradient(to bottom, #d64d60 50%, #d24459 50%)',
+                        'spacer-left-h2': 'linear-gradient(to right, #a4023900, #a4023980)',
+                        'spacer-right-h2': 'linear-gradient(to left, #a4023900, #a4023980)',
 
-              },
-              spacing: {
-                '15': '3.75rem',
-                '22': '5.5rem',
-                '85': '21.25rem',
-                '175': '43.75rem',
-              },
-              boxShadow: {
-                'video': '0 0 16px rgba(0, 0, 0, 0.75)',
-                'header': '0 0 16px rgba(0, 0, 0, 0.9)',
-              },
+                    },
+                    lineHeight: {
+                        '22.5': '5.625rem',
+                    },
+                },
             },
-            fontFamily: {
-                'berylium': ['berylium_bd', 'raleway'],
-                'krueger': ['ATCKrueger', 'raleway'],
-                'raleway': ['raleway'],
-            },
-            fontSize: {
-                'size-content': '1.1rem',
-                'size-header': '1.8rem',
-                'size-button': '2.5rem',
-                'size-buy': '3.75rem',
-                'size-h2': '4rem',
-            },
-            backgroundImage: {
-                'shadow': 'linear-gradient(to bottom, #000000cc, #00000080 12px)',
-                'header-banner': "url('images/headerBanner.jpg')",
-                'where-buy': 'linear-gradient(to bottom, #d1394e 50%, #cd2f46 50%)',
-                'spacer-left-h2': 'linear-gradient(to right, #a4023900, #a4023980)',
-                'spacer-right-h2': 'linear-gradient(to left, #a4023900, #a4023980)',
-
-            }
-
-          }
         }
       </script>
     <link rel="stylesheet" href="style.css">
     <title>Dead Cells</title>
 </head>
-<body class="bg-black-bg text-yellow-content font-raleway text-size-content">
+<body class="bg-black-bg text-yellow-content font-raleway text-size-content leading-tight">
     <div class="h-16 bg-pink-header"></div>
     <header class="flex justify-between items-center bg-black-header h-16 fixed w-full -mt-16 shadow-header">
         <a href="DeadCells.html"><img src="images/logoHorizontal.png" class="h-10 w-32 pl-5"></a>
@@ -104,67 +117,68 @@
             Trailer - Available August 7, 2018" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
             picture-in-picture; web-share" allowfullscreen class="mt-16 shadow-video"></iframe>
         </div>
-        <a class="text-white font-krueger text-size-buy text-center bg-where-buy w-85 h-22 border-solid border-b-8 border-purple-button m-auto mt-11">Where to buy?</a>
-        <h2 class="text-center text-red-content font-berylium text-size-h2 before:bg-spacer-left-h2 before:w-1/5 before:h-1 before:inline-block before:align-middle after:bg-spacer-right-h2 after:w-1/5 after:h-1 after:inline-block after:align-middle">What is Dead Cells ?</h2>
+        <a href="https://dead-cells.com/products" class="text-white font-krueger text-size-buy text-center bg-where-buy w-85 h-22 border-solid border-b-8 border-purple-button m-auto mt-11 leading-22.5 hover:bg-where-buy-hover">Where to buy ?</a>
+        <h2 class="text-center text-red-content font-berylium text-size-h2 before:bg-spacer-left-h2 before:w-1/5 before:h-1 before:inline-block before:align-middle after:bg-spacer-right-h2 after:w-1/5 after:h-1 after:inline-block after:align-middle mt-6 mb-6">What is Dead Cells ?</h2>
         <div class="flex flex-col justify-center w-175 m-auto">
-            <p> Dead Cells is a rogue-lite, Castlevania-inspired action-platformer, allowing you to explore a sprawling, ever-changing 
+            <p class="mb-3"> Dead Cells is a rogue-lite, Castlevania-inspired action-platformer, allowing you to explore a sprawling, ever-changing 
                 castle… assuming you’re able to fight your way past its keepers. </p>
-            <p> To beat the game, you’ll have to master 2D "souls-lite combat" with the ever-present threat of permadeath looming. No 
+            <p class="mb-3"> To beat the game, you’ll have to master 2D "souls-lite combat" with the ever-present threat of permadeath looming. No 
                 checkpoints. Kill, die, learn, repeat. </p>
-
-            <div class="columns-2 break-inside-avoid-column">
-                <p class=""> <strong class="text-red-content">RogueVania:</strong> Intense 2D action with the adrenaline pumping threat of permadeath in a castle full of cuddly creatures. </p>
-                <p class=""> <strong class="text-red-content">Souls-lite combat:</strong> Pattern-based bosses and minions, weapons and spells with unique gameplay. Roll roll roll your boat 
+            <div class="columns-2 break-inside-avoid-column mb-6">
+                <p> <strong class="text-red-content">RogueVania:</strong> Intense 2D action with the adrenaline pumping threat of permadeath in a castle full of cuddly creatures. </p>
+                <p class="mt-3"> <strong class="text-red-content">Souls-lite combat:</strong> Pattern-based bosses and minions, weapons and spells with unique gameplay. Roll roll roll your boat 
                     gently down the stream... </p>
                 <p> <strong class="text-red-content">Nonlinear progression:</strong> Unlock new levels with every death, take a new path. Tired of the stinking sewers? Why not take 
                     the ramparts? </p>
-                <p> <strong class="text-red-content">Exploration:</strong> Secret rooms, hidden passages, charming landscapes. A fine place for a holiday. </p>
+                <p class="mt-3"> <strong class="text-red-content">Exploration:</strong> Secret rooms, hidden passages, charming landscapes. A fine place for a holiday. </p>
             </div>
             <div class="flex justify-between">
-                <video src='videos/roof.webm'autoplay class="w-85"></video>
-                <video src='videos/bossFight.webm' autoplay class="w-85"></video>
+                <video src='videos/roof.webm'autoplay loop class="w-85 shadow-video"></video>
+                <video src='videos/bossFight.webm' autoplay loop class="w-85 shadow-video"></video>
             </div>
         </div>
-        <h2 class="text-center text-red-content font-berylium text-size-h2 before:bg-spacer-left-h2 before:w-1/5 before:h-1 before:inline-block before:align-middle after:bg-spacer-right-h2 after:w-1/5 after:h-1 after:inline-block after:align-middle">Dead Cells on Android</h2>
-        <div class="flex flex-col justify-center w-175 m-auto">
-            <p class="text-center">Get an alert when Dead Cells is available on Android :</p>
-            <input type="email" placeholder="Email adress here" class="bg-transparent-mail border-solid border border-yellow-mail placeholder:text-yellow-mail">
-            <input type="submit" value="Be notified !" class="font-krueger bg-red-button text-size-button w-85 m-auto">
+        <h2 class="text-center text-red-content font-berylium text-size-h2 before:bg-spacer-left-h2 before:w-1/5 before:h-1 before:inline-block before:align-middle after:bg-spacer-right-h2 after:w-1/5 after:h-1 after:inline-block after:align-middle mt-10 mb-5px">Dead Cells on Android</h2>
+        <div class="flex flex-col items-center w-175 m-auto">
+            <p class="w-124">Get an alert when Dead Cells is available on Android :</p>
+            <input type="email" placeholder="Email adress here" class="bg-transparent-mail border-solid border border-yellow-mail placeholder:text-yellow-mail placeholder:text-size-placeholder pl-2 self-center w-124 h-9 mt-6">
+            <input type="submit" value="Be notified !" class="font-krueger bg-red-button text-size-button w-85 m-auto shadow-video mt-8">
         </div>
-        <h2 class="text-center text-red-content font-berylium text-size-h2 before:bg-spacer-left-h2 before:w-1/5 before:h-1 before:inline-block before:align-middle after:bg-spacer-right-h2 after:w-1/5 after:h-1 after:inline-block after:align-middle">Blog</h2>
-        <div class="flex flex-col justify-center w-175 m-auto">
-            <div>
-                <p>gamecrate.com</p>
-                <a><h3 class="text-red-content">Interview: Motion Twin talks about developing Dead Cells</h3></a>
-                <p>Motion Twin is a small, French game development company located in Bordeaux, France. From there, the 10-man team has 
-                    created a multitude of mobile games. But what happens when they shift over into making a game for PC/console? That 
-                    result is Dead Cells, a roguelike, Castlevania-inspired, action-platformer. The game combines all of the fun of 
-                    platformers, without the hassle of trick edges, with the fun of quick and visceral combat in a non-hardware 
-                    intensive package.</p>
+        <h2 class="text-center text-red-content font-berylium text-size-h2 before:bg-spacer-left-h2 before:w-1/5 before:h-1 before:inline-block before:align-middle after:bg-spacer-right-h2 after:w-1/5 after:h-1 after:inline-block after:align-middle mt-10 mb-10">Blog</h2>
+        <div class="flex flex-col justify-center w-175 m-auto ">
+            <div class="pb-8 bg-blue-blog shadow-video">
+                <div class="bg-red-blog border-b border-solid border-red-blog-border p-5">
+                    <p class="text-source-blog">gamecrate.com</p>
+                    <a href="https://www.gamecrate.com/interview-motion-twin-talks-about-developing-dead-cells/18378"><h3 class="text-red-content text-title-blog">Interview: Motion Twin talks about developing Dead Cells</h3></a>
+                    <p class="text-[1rem]">Motion Twin is a small, French game development company located in Bordeaux, France. From there, the 10-man team has 
+                        created a multitude of mobile games. But what happens when they shift over into making a game for PC/console? That 
+                        result is Dead Cells, a roguelike, Castlevania-inspired, action-platformer. The game combines all of the fun of 
+                        platformers, without the hassle of trick edges, with the fun of quick and visceral combat in a non-hardware 
+                        intensive package.</p>
+                </div>
             </div>
-            <a class="font-krueger bg-red-button text-size-button w-85 m-auto text-center">Read more posts</a>
+            <a class="font-krueger bg-red-button text-size-button w-85 mr-auto ml-auto mt-8 mb-16 text-center shadow-video hover:bg-red-content" href="https://dead-cells.com/blog#1">Read more posts</a>
         </div>
     </section>
-    <footer class="bg-shadow flex flex-col flex-wrap items-center h-60">
-        <div class="flex">
-            <div class="h-full w-80">
+    <footer class="bg-shadow flex flex-col flex-wrap items-center h-60 text-source-blog">
+        <div class="flex mt-8 w-140 justify-between">
+            <div class="h-full w-56">
                 <img src="images/mtlogo.png" class="h-6 w-44">
-                <p class="text-grey-footer"><a class="text-white">Motion Twin</a> is a French workers cooperative based in Bordeaux.</p>
-                <p class="text-grey-footer">We've been making games since 2001 and we're going to keep on doing that until senility kicks in! 
+                <p class="text-grey-footer mt-5px"><a class="text-white" href="https://motion-twin.com/">Motion Twin</a> is a French workers cooperative based in Bordeaux.</p>
+                <p class="text-grey-footer mt-5px">We've been making games since 2001 and we're going to keep on doing that until senility kicks in! 
                     Currently working on our first PC/Console title.</p>
             </div>
-            <ul class="h-full w-24">
+            <ul class="h-full w-30">
                 <li>
-                    <a class="text-grey-footer after:content-['>'] after:text-red-content">Available on Steam</a>
+                    <a class="text-grey-footer after:content-['>'] after:text-red-content after:ml-5px hover:text-white" href="http://store.steampowered.com/app/588650/Dead_Cells/">Available on Steam</a>
                 </li>
                 <li>
-                    <a class="text-grey-footer after:content-['>'] after:text-red-content">Follow us on Twitter</a>
+                    <a class="text-grey-footer after:content-['>'] after:text-red-content after:ml-5px hover:text-white" href="https://twitter.com/motiontwin">Follow us on Twitter</a>
                 </li>
                 <li>
-                    <a class="text-grey-footer after:content-['>'] after:text-red-content">Follow us on Facebook</a>
+                    <a class="text-grey-footer after:content-['>'] after:text-red-content after:ml-5px hover:text-white" href="https://www.facebook.com/dead.cells.game">Follow us on Facebook</a>
                 </li>
                 <li>
-                    <a class="text-grey-footer after:content-['>'] after:text-red-content">Presskit</a>
+                    <a class="text-grey-footer after:content-['>'] after:text-red-content after:ml-5px hover:text-white" href="https://motion-twin.com/presskit/81">Presskit</a>
                 </li>
             </ul>
         </div>
