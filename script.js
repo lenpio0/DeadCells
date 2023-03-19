@@ -38,6 +38,8 @@ if (bossVideo) {
 let sidenav = document.getElementById("sideNav");
 let open = document.getElementById("open");
 let close = document.getElementById("close");
+let header = document.getElementById("header");
+let links = document.getElementById("links");
 
 open.onclick = openNav;
 close.onclick = closeNav;
@@ -45,9 +47,17 @@ close.onclick = closeNav;
 function openNav() {
     sidenav.classList.remove("hidden");
     open.classList.add("hidden");
+    header.classList.remove("shadow-header");
+    header.classList.replace("bg-black-header", "bg-black-header-open");
+    links.classList.replace("bg-black-header", "bg-black-header-open");
+
 }
 
 function closeNav() {
     sidenav.classList.add("hidden");
     open.classList.remove("hidden");
+    header.classList.add("shadow-header");
+    header.classList.replace("bg-black-header-open", "bg-black-header");
+    links.classList.replace("bg-black-header-open", "bg-black-header");
+
 }
