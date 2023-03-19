@@ -115,96 +115,60 @@
         <div class="bg-header-banner flex justify-center">
             <iframe width="1280" height="720" src="https://www.youtube.com/embed/02G3GUt6Nzo" title="Dead Cells Release Date Announcement 
             Trailer - Available August 7, 2018" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
-            picture-in-picture; web-share" allowfullscreen class="mt-16 shadow-video"></iframe>
+            picture-in-picture; web-share" allowfullscreen class="mt-16 shadow-video w-[360px] h-[202px] sm:w-[640px] sm:h-[360px] md:w-[768px] md:h-[432px] lg:w-[1024px] lg:h-[576px] xl:w-[1280px] xl:h-[720px]"></iframe>
         </div>
         <a href="https://dead-cells.com/products" class="text-white font-krueger text-size-buy text-center bg-where-buy w-85 h-22 border-solid border-b-8 border-purple-button m-auto mt-11 leading-22.5 hover:bg-where-buy-hover">Where to buy ?</a>
-        <h2 class="text-center text-red-content font-berylium text-size-h2 before:bg-spacer-left-h2 before:w-1/5 before:h-1 before:inline-block before:align-middle after:bg-spacer-right-h2 after:w-1/5 after:h-1 after:inline-block after:align-middle mt-6 mb-6">What is Dead Cells ?</h2>
-        <div class="flex flex-col justify-center w-175 m-auto">
-            <p class="mb-3"> Dead Cells is a rogue-lite, Castlevania-inspired action-platformer, allowing you to explore a sprawling, ever-changing 
+        <h2 class="text-center text-red-content font-berylium text-5xl md:text-size-h2 before:bg-spacer-left-h2 before:w-[10%] lg:before:w-1/5 before:h-1 before:inline-block before:align-middle after:bg-spacer-right-h2 after:w-[10%] lg:after:w-1/5 after:h-1 after:inline-block after:align-middle mt-6 mb-6">What is Dead Cells ?</h2>
+        <div class="flex flex-col justify-center w-140 md:w-175 m-auto">
+            <p class="mb-3 text-[1rem] md:text-size-content"> Dead Cells is a rogue-lite, Castlevania-inspired action-platformer, allowing you to explore a sprawling, ever-changing 
                 castle… assuming you’re able to fight your way past its keepers. </p>
-            <p class="mb-3"> To beat the game, you’ll have to master 2D "souls-lite combat" with the ever-present threat of permadeath looming. No 
+            <p class="mb-3 text-[1rem] md:text-size-content"> To beat the game, you’ll have to master 2D "souls-lite combat" with the ever-present threat of permadeath looming. No 
                 checkpoints. Kill, die, learn, repeat. </p>
-            <div class="columns-2 break-inside-avoid-column mb-6">
-                <p> <strong class="text-red-content">RogueVania:</strong> Intense 2D action with the adrenaline pumping threat of permadeath in a castle full of cuddly creatures. </p>
-                <p class="mt-3"> <strong class="text-red-content">Souls-lite combat:</strong> Pattern-based bosses and minions, weapons and spells with unique gameplay. Roll roll roll your boat 
+            <div class="md:columns-2 break-inside-avoid-column mb-6">
+                <p class="text-[1rem] md:text-size-content"> <strong class="text-red-content">RogueVania:</strong> Intense 2D action with the adrenaline pumping threat of permadeath in a castle full of cuddly creatures. </p>
+                <p class="mt-3 text-[1rem] md:text-size-content"> <strong class="text-red-content">Souls-lite combat:</strong> Pattern-based bosses and minions, weapons and spells with unique gameplay. Roll roll roll your boat 
                     gently down the stream... </p>
-                <p> <strong class="text-red-content">Nonlinear progression:</strong> Unlock new levels with every death, take a new path. Tired of the stinking sewers? Why not take 
+                <p class="text-[1rem] md:text-size-content"> <strong class="text-red-content">Nonlinear progression:</strong> Unlock new levels with every death, take a new path. Tired of the stinking sewers? Why not take 
                     the ramparts? </p>
-                <p class="mt-3"> <strong class="text-red-content">Exploration:</strong> Secret rooms, hidden passages, charming landscapes. A fine place for a holiday. </p>
+                <p class="mt-3 text-[1rem] md:text-size-content"> <strong class="text-red-content">Exploration:</strong> Secret rooms, hidden passages, charming landscapes. A fine place for a holiday. </p>
             </div>
-            <div class="flex justify-between">
-                <video src='videos/roof.webm'autoplay loop class="w-85 shadow-video hover:cursor-zoom-in" id="roof-video"></video>
-                <video src='videos/bossFight.webm' autoplay loop class="w-85 shadow-video hover:cursor-zoom-in" id="boss-video"></video>
+            <div class="md:flex justify-between">
+                <video src='videos/roof.webm'autoplay loop class="m-auto w-4/5 md:w-85 shadow-video hover:cursor-zoom-in" id="roof-video"></video>
+                <video src='videos/bossFight.webm' autoplay loop class="m-auto mt-[30px] w-4/5 md:w-85 shadow-video hover:cursor-zoom-in" id="boss-video"></video>
             </div>
         </div>
-        <script type="text/javascript">
-            var roofVideo = document.getElementById("roof-video")
-             if (roofVideo) {
-                roofVideo.addEventListener("click", function (evt) {
-                    if (roofVideo.requestFullscreen) {
-                        roofVideo.requestFullscreen();
-                    }
-                    else if (roofVideo.msRequestFullscreen) {
-                        roofVideo.msRequestFullscreen();
-                    }
-                    else if (roofVideo.mozRequestFullScreen) {
-                        roofVideo.mozRequestFullScreen();
-                    }
-                    else if (roofVideo.webkitRequestFullScreen) {
-                        roofVideo.webkitRequestFullScreen();
-                    }
-                }, false);
-            }
-            var bossVideo = document.getElementById("boss-video")
-             if (bossVideo) {
-                bossVideo.addEventListener("click", function (evt) {
-                    if (bossVideo.requestFullscreen) {
-                        bossVideo.requestFullscreen();
-                    }
-                    else if (bossVideo.msRequestFullscreen) {
-                        bossVideo.msRequestFullscreen();
-                    }
-                    else if (bossVideo.mozRequestFullScreen) {
-                        bossVideo.mozRequestFullScreen();
-                    }
-                    else if (bossVideo.webkitRequestFullScreen) {
-                        bossVideo.webkitRequestFullScreen();
-                    }
-                }, false);
-            }
-       </script>
-   
-        <h2 class="text-center text-red-content font-berylium text-size-h2 before:bg-spacer-left-h2 before:w-1/5 before:h-1 before:inline-block before:align-middle after:bg-spacer-right-h2 after:w-1/5 after:h-1 after:inline-block after:align-middle mt-10 mb-5px">Dead Cells on Android</h2>
-        <div class="flex flex-col items-center w-175 m-auto">
-            <p class="w-124">Get an alert when Dead Cells is available on Android :</p>
+        <script src="fullscreen.js" type="text/javascript"></script> 
+        <h2 class="text-center text-red-content font-berylium text-5xl md:text-size-h2 before:bg-spacer-left-h2 before:w-[10%] lg:before:w-1/5 before:h-1 before:inline-block before:align-middle after:bg-spacer-right-h2 after:w-[10%] lg:after:w-1/5 after:h-1 after:inline-block after:align-middle mt-10 mb-5px">Dead Cells on Android</h2>
+        <div class="flex flex-col items-center w-140 md:w-175 m-auto">
+            <p class="w-124 text-[1rem] md:text-size-content mt-[10px] md:mt-0">Get an alert when Dead Cells is available on Android :</p>
             <input type="email" placeholder="Email adress here" class="bg-transparent-mail border-solid border border-yellow-mail placeholder:text-yellow-mail placeholder:text-size-placeholder pl-2 self-center w-124 h-9 mt-6">
             <input type="submit" value="Be notified !" class="font-krueger bg-red-button text-size-button w-85 m-auto shadow-video mt-8">
         </div>
-        <h2 class="text-center text-red-content font-berylium text-size-h2 before:bg-spacer-left-h2 before:w-1/5 before:h-1 before:inline-block before:align-middle after:bg-spacer-right-h2 after:w-1/5 after:h-1 after:inline-block after:align-middle mt-10 mb-10">Blog</h2>
-        <div class="flex flex-col justify-center w-175 m-auto ">
+        <h2 class="text-center text-red-content font-berylium text-5xl md:text-size-h2 before:bg-spacer-left-h2 before:w-1/5 before:h-1 before:inline-block before:align-middle after:bg-spacer-right-h2 after:w-1/5 after:h-1 after:inline-block after:align-middle mt-10 mb-10">Blog</h2>
+        <div class="flex flex-col justify-center w-[90%] md:w-175 m-auto ">
             <div class="pb-8 bg-blue-blog shadow-video">
                 <div class="bg-red-blog border-b border-solid border-red-blog-border p-5">
                     <p class="text-source-blog">gamecrate.com</p>
-                    <a href="https://www.gamecrate.com/interview-motion-twin-talks-about-developing-dead-cells/18378"><h3 class="text-red-content text-title-blog">Interview: Motion Twin talks about developing Dead Cells</h3></a>
-                    <p class="text-[1rem]">Motion Twin is a small, French game development company located in Bordeaux, France. From there, the 10-man team has 
+                    <a href="https://www.gamecrate.com/interview-motion-twin-talks-about-developing-dead-cells/18378"><h3 class="text-red-content text-2xl md:text-title-blog">Interview: Motion Twin talks about developing Dead Cells</h3></a>
+                    <p class="text-source-blog md:text-[1rem]">Motion Twin is a small, French game development company located in Bordeaux, France. From there, the 10-man team has 
                         created a multitude of mobile games. But what happens when they shift over into making a game for PC/console? That 
                         result is Dead Cells, a roguelike, Castlevania-inspired, action-platformer. The game combines all of the fun of 
                         platformers, without the hassle of trick edges, with the fun of quick and visceral combat in a non-hardware 
                         intensive package.</p>
                 </div>
             </div>
-            <a class="font-krueger bg-red-button text-size-button w-85 mr-auto ml-auto mt-8 mb-16 text-center shadow-video hover:bg-red-content" href="https://dead-cells.com/blog#1">Read more posts</a>
+            <a class="font-krueger bg-red-button text-size-button w-72 sm:w-85 mr-auto ml-auto mt-8 mb-16 text-center shadow-video hover:bg-red-content" href="https://dead-cells.com/blog#1">Read more posts</a>
         </div>
     </section>
-    <footer class="bg-shadow flex flex-col flex-wrap items-center h-60 text-source-blog">
-        <div class="flex mt-8 w-140 justify-between">
+    <footer class="bg-shadow flex flex-col flex-wrap items-center h-[20rem] sm:h-60 text-source-blog">
+        <div class="flex flex-col sm:flex-row mt-8 w-85 sm:w-124 md:w-140 justify-between items-center sm:items-start">
             <div class="h-full w-56">
                 <img src="images/mtlogo.png" class="h-6 w-44">
                 <p class="text-grey-footer mt-5px"><a class="text-white" href="https://motion-twin.com/">Motion Twin</a> is a French workers cooperative based in Bordeaux.</p>
                 <p class="text-grey-footer mt-5px">We've been making games since 2001 and we're going to keep on doing that until senility kicks in! 
                     Currently working on our first PC/Console title.</p>
             </div>
-            <ul class="h-full w-30">
+            <ul class="h-full w-30 mt-[30px] sm:mt-0">
                 <li>
                     <a class="text-grey-footer after:content-['>'] after:text-red-content after:ml-5px hover:text-white" href="http://store.steampowered.com/app/588650/Dead_Cells/">Available on Steam</a>
                 </li>
