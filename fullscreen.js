@@ -44,8 +44,10 @@ close.onclick = closeNav;
 
 function openNav() {
     sidenav.classList.remove("hidden");
+    open.classList.add("hidden");
 }
 
 function closeNav() {
     sidenav.classList.add("hidden");
+    open.classList.remove("hidden");
 }
