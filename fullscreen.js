@@ -32,3 +32,20 @@ if (bossVideo) {
        }
    }, false);
 }
+
+
+
+let sidenav = document.getElementById("sideNav");
+let open = document.getElementById("open");
+let close = document.getElementById("close");
+
+open.onclick = openNav;
+close.onclick = closeNav;
+
+function openNav() {
+    sidenav.classList.remove("hidden");
+}
+
+function closeNav() {
+    sidenav.classList.add("hidden");
+}
