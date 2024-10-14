@@ -1,2 +1,4 @@
 # DeadCells
-It is a copy of Dead Cells website, using Tailwind.
+Small personal project, reproduction of Dead Cells website.
+Done in several days to try and learn Tailwind for the first time.
+
